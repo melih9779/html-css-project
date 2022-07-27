@@ -93,19 +93,19 @@ header .icons .sign .thirdpart-login-icon{
 }
 
 header .icons .sign .thirdpart-login-icon.icon-facebook{
-  background-image: url(img/fb.svg)
+  background-image: url(../img/fb.svg)
 }
 
 header .icons .sign .thirdpart-login-icon.icon-google{
-  background-image: url(img/google.svg)
+  background-image: url(../img/google.svg)
 }
 
 header .icons .sign .thirdpart-login-icon.icon-linkedin{
-  background-image: url(img/linkedin.svg)
+  background-image: url(../img/linkedin.svg)
 }
 
 header .icons .sign .thirdpart-login-icon.icon-twitter{
-  background-image: url(img/twitter.svg)
+  background-image: url(../img/twitter.svg)
 }
 
 header .icons .sign .thirdpart-login-icon-container{
@@ -162,11 +162,10 @@ header .icon-container a .text{
   padding: 16px 0;
   background-color: #FFF;
   color: #333;
-  -webkit-box-shadow: 0 2px 8px 0 #aaa;
-  -moz-box-shadow: 0 2px 8px 0 #AAA;
   box-shadow: 0 2px 8px 0 #aaa;
   border-radius: 8px;
   display: none;
+  z-index: 999;
 }
 
 .icon-balloon::before{
@@ -390,8 +389,6 @@ header .icon-cart{
   border-radius: 3px;
   background-color: #fff;
   z-index: 99;
-  -moz-box-shadow: 1px 1px 4px -1px rgba(0,0,0,.2);
-  -webkit-box-shadow: 1px 1px 4px -1px rgb(0 0 0 / 20%);
   box-shadow: 1px 1px 4px -1px rgb(0 0 0 / 20%);
 }
 
@@ -529,24 +526,28 @@ header .icon-cart{
     text-overflow: ellipsis;
     min-height: 21px;
     background: #fff;
-    -moz-box-shadow: -2px 1px 5px transparent;
-    -webkit-box-shadow: -2px 1px 5px transparent;
     box-shadow: -2px 1px 5px transparent;
     border: 1px solid transparent;
     box-sizing: content-box;
 }
 .category .header-category ul li:hover{
     z-index: 2;
-    -moz-box-shadow: -2px 1px 5px #e7e7e7;
-    -webkit-box-shadow: -2px 1px 5px #e7e7e7;
     box-shadow: -2px 1px 5px #e7e7e7;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
     border-radius: 2px;
     border: 1px solid #e7e7e7;
     border-right: 1px solid transparent;
 }
-.category .header-category ul li a{display: block;padding: 0;margin: 0;font-size: 12px;line-height: 24px;color: #666;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.category .header-category ul li a{
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .category .header-category ul li:hover .inner-category {
   display: flex;
@@ -616,8 +617,6 @@ main .main-content .left-content ul li {
 }
 
 main .main-content .left-content ul li a{
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   word-break: break-word;
 }
@@ -730,8 +729,6 @@ main .main-content .right-content .ta-promotion-list .title{
 	max-width: 198px;
 	display: -webkit-box;
 	text-overflow: ellipsis;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
 main .main-content .right-content .ta-promotion-list .item-banner{
@@ -1221,7 +1218,6 @@ main .rfq-container .rfq-inner .rfq-right .rfq-form-body .rfq-list .item-info{
   height: 30px;
   line-height: 15px;
   color: #666;
-  -webkit-animation: scroll 25s infinite;
 }
 
 main .rfq-container .rfq-inner .rfq-right .rfq-form-body .form-item{
@@ -1237,7 +1233,6 @@ main .rfq-container .rfq-inner .rfq-right .rfq-form-body .form-item .form-input{
   font-size: 0;
   line-height: 1;
   border-spacing: 0;
-  -webkit-transition: all .1s linear;
   -o-transition: all .1s linear;
   transition: all .1s linear;
   border: 1px solid #c4c6cf;
@@ -1365,7 +1360,6 @@ main .rfq-container .rfq-inner .rfq-right .rfq-form-body .form-item .sumbit{
 }
 #re-container .product-item .item-info h2.title a{
   height: 40px;
-  -webkit-line-clamp: 2;
   line-height: 20px;
   color: #333;
   letter-spacing: 0;
@@ -1373,7 +1367,6 @@ main .rfq-container .rfq-inner .rfq-right .rfq-form-body .form-item .sumbit{
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-box-orient: vertical;
 }
 #re-container .product-item .item-info .price-area{
   margin-top: 12px;
@@ -1802,9 +1795,6 @@ footer .footer-links .tfs-img {
 	position: relative;
 	text-align: center;
 	line-height: 400px;
-	padding-bottom: 30px;
-	margin: 0 auto;
-	transition: all 0.5s ease;
 }
 
 .slideshow--item {
@@ -1841,11 +1831,6 @@ footer .footer-links .tfs-img {
 	z-index: 88;
 	cursor: pointer;
 	color: transparent;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 }
 .slideshow--nav:after {
