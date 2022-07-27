@@ -328,7 +328,7 @@ header .icon-container a .text{
 
 header .icon{
   background-repeat: no-repeat;
-  background-image: url(img/icons.png);
+  background-image: url(../img/icons.png);
   display: inline-block;
   vertical-align: inherit;
   width: 22px;
@@ -409,7 +409,7 @@ header .icon-cart{
 .searchBar-body .searchBar-arrow{
   text-align: center;
   background-repeat: no-repeat;
-  background-image: url(img/icons.png);
+  background-image: url(../img/icons.png);
   display: inline-block;
   width: 16px;
   height: 12px;
